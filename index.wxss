@@ -1,0 +1,116 @@
+/* 选项卡 */
+.nav {
+  display: flex;
+  color: #858585;
+  margin-left: 30rpx;
+  margin-bottom: 45rpx;
+  font-size: 32rpx;
+}
+
+.nav view {
+  text-align: center;
+  position: relative;
+}
+
+.acac11 {
+  margin-right: 60rpx;
+}
+
+.active {
+  color: #333;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  top: 48rpx;
+  left: 35%;
+  bottom: 10rpx;
+  width: 44rpx;
+  height: 8rpx;
+  background-color: #48d2a6;
+  border-radius: 50rpx;
+}
+
+/* 选项卡内容 */
+.nav_main{
+  font-size: 28rpx;
+}
+.nav_main1 {
+ width: 690rpx;
+ margin: auto;
+  margin-bottom: 30rpx;
+}
+
+.nav_main1 .goods_img {
+  width: 690rpx;
+  height: 262rpx;
+}
+.icon_text{
+  margin-top: 15rpx;
+  position: relative;
+}
+.icon_text .goods_img1 {
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+.icon_text .index_new{
+  display: inline-block;
+  background: #f28282;
+  color: #fff;
+  padding: 6rpx;
+  font-size: 20rpx;
+  position: absolute;
+  top:-8rpx;
+}
+.icon_text .goods_text{
+  float: right;
+  color: #c1c1c1;
+}
+.icon_text .goods_title{
+  margin: 0 20rpx 0 10rpx;
+}
+
+/* 选项卡内容2 */
+.cg_nav_main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 93%;
+  margin: auto;
+}
+.cg_nav_main .cg_nav_main1{
+   width: 333rpx;
+}
+.nav_main1_imgbox .cg_goods_img{
+  width: 333rpx;
+  height: 216rpx;
+}
+.nav_main1_imgbox{
+  position: relative;
+}
+.nav_main1_imgbox .xingfucheng{
+  width: 274rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  position: absolute;
+  bottom: 0;
+  padding: 0 30rpx;
+  color: #fff;
+  background: #665c53;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+}
+.cg_nav_main1 .goods_title{
+  font-size: 32rpx;
+  letter-spacing: 5rpx;
+}
+.cg_nav_main1 .goods_text{
+  font-size: 28rpx;
+  letter-spacing: 5rpx;
+  color: #adb0b0;
+}

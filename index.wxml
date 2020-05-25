@@ -1,0 +1,32 @@
+<!-- 选项卡 -->
+<view class="nav">
+  <block wx:for="{{titles}}" wx:key="titles">
+    <view class="acac11 {{activeindex==index ? 'active':''}}" bindtap="headelcilck" data-index="{{index}}">{{item}}</view>
+  </block>
+</view>
+<!-- 选项卡内容1 -->
+<view class="nav_main" wx:if="{{activeindex==0}}">
+  <view class="nav_main1" wx:for="{{goodslist}}" wx:key="goodslist">
+    <image src="{{item.goods_img}}" class="goods_img"></image>
+    <view class="icon_text">
+      <image src="{{item.goods_img1}}" class="goods_img1"></image>
+      <text class="goods_title">{{item.goods_title}}</text>
+      <text class="index_new">{{item.index_new}}</text>
+      <text class="goods_text">{{item.goods_text}}</text>
+    </view>
+  </view>
+</view>
+<!-- 选项卡内容2 -->
+<view class="nav_main cg_nav_main" wx:if="{{activeindex==1}}">
+  <view class="nav_main1 cg_nav_main1" wx:for="{{goodslist1}}" wx:key="goodslist1">
+    <view class="nav_main1_imgbox">
+      <image src="{{item.goods_img}}" class="cg_goods_img"></image>
+      <view class="xingfucheng">
+        <text>{{item.index_new}}</text>
+        <text>{{item.index_new1}}</text>
+      </view>
+    </view>
+    <view class="goods_title">{{item.goods_title}}</view>
+    <view class="goods_text">{{item.goods_text}}</view>
+  </view>
+</view>
